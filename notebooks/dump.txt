@@ -1,0 +1,52 @@
+[I 14:17:07.958 NotebookApp] Serving notebooks from local directory: /home/antonxue/foo/smooth-interp/notebooks
+[I 14:17:07.958 NotebookApp] Jupyter Notebook 6.4.12 is running at:
+[I 14:17:07.958 NotebookApp] http://localhost:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
+[I 14:17:07.958 NotebookApp]  or http://127.0.0.1:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
+[I 14:17:07.958 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 14:17:07.961 NotebookApp] No web browser found: could not locate runnable browser.
+[C 14:17:07.961 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/antonxue/.local/share/jupyter/runtime/nbserver-127589-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
+     or http://127.0.0.1:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
+[I 14:17:09.706 NotebookApp] 302 GET / (127.0.0.1) 0.520000ms
+[W 14:17:13.149 NotebookApp] Notebook wfvml_plots.ipynb is not trusted
+[I 14:17:13.883 NotebookApp] Kernel started: 82ec46ee-4a07-4330-b4e0-6b9742d0f07c, name: python3
+[I 14:17:22.889 NotebookApp] Creating new notebook in 
+[I 14:17:24.216 NotebookApp] Kernel started: 33d877f6-f25f-49b9-a6fe-c3137858cc74, name: python3
+[I 14:19:24.232 NotebookApp] Saving file at /sample_images.ipynb
+/home/antonxue/lib/miniconda3/envs/intml/lib/python3.10/site-packages/nbformat/__init__.py:129: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+/home/antonxue/lib/miniconda3/envs/intml/lib/python3.10/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate_nb(model['content'])
+[I 14:56:00.888 NotebookApp] Starting buffering for 82ec46ee-4a07-4330-b4e0-6b9742d0f07c:2dd915bf610c469796ff6d6e52c022c0
+2023-07-13 14:56:44.129871: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-13 14:56:44.605472: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-07-13 14:56:46.190494: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-07-13 14:56:46.191104: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-07-13 14:56:46.191123: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 14:57:24.245 NotebookApp] Saving file at /sample_images.ipynb
+[I 14:59:24.252 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:01:24.249 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:03:24.390 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:05:24.415 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:07:24.252 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:09:24.225 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:10:09.901 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:13:24.247 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:15:24.256 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:17:24.251 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:19:24.233 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:19:36.629 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:21:24.263 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:23:24.231 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:24:38.014 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:25:24.229 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:27:24.233 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:31:24.227 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:33:24.230 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:35:24.236 NotebookApp] Saving file at /sample_images.ipynb
+[I 15:36:54.143 NotebookApp] Saving file at /sample_images.ipynb
