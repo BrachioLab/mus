@@ -1,0 +1,13 @@
+name: mus
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - jupyter
+  - pytorch
+  - torchvision
+  - shap
+  - matplotlib
+  - lime
+  - transformers

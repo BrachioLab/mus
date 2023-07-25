@@ -40,7 +40,7 @@ class MuS(nn.Module):
     # s_base has q total values from {0, 1/q, ..., (q-1)/q} + 1/(2q)
     s_base = ((torch.tensor(range(0,q)) + 0.5) / q).to(x.device)
     t = (v.view(1,p) + s_base.view(q,1)).remainder(1.0) # (q,p)
-    # s = (t <= self.lambd).float() # (q,p)
+    # Equivalent to: s = (t <= self.lambd).float() # (q,p)
     s = (2 * self.q * F.relu(self.lambd - t)).clamp(0,1) # (q,p)
 
     talpha = (muflat.view(N,1,p) + (alflat.view(N,1,p) * s.view(1,q,p))).clamp(0,1)
@@ -78,8 +78,8 @@ class MuS(nn.Module):
     # If we want to return everything, do so
     if return_all_q:
       return yy_noised
-    # ... Otherwise (for simplicity) we need to assume that last dim is the classes
 
+    # ... Otherwise (for simplicity) we need to assume that last dim is the classes
     assert yy_noised.ndim == 3
     if use_voting:
       yy_noised = F.one_hot(yy_noised.argmax(dim=2), yy_noised.shape[-1]).float()
