@@ -9,23 +9,23 @@ from .header import *
 
 # Wrap something around a MuS model so that we can exploit CUDA better
 class ShapCudaMuSWrapper(nn.Module):
-  def __init__(self, model, x):
+  def __init__(self, model, x, device="cuda"):
     super(ShapCudaMuSWrapper, self).__init__()
-    self.model = model.cuda()
+    self.device = device
+    self.model = model.to(device)
     assert isinstance(x, torch.Tensor)
-    self.x = x.cuda()
+    self.x = x.to(device)
   
   def forward(self, alpha):
     torch.cuda.empty_cache()
     N, p = alpha.shape
-    device = alpha.device
     xx = torch.stack(N*[self.x])
-    y = self.model(xx, alpha=alpha.cuda())
-    return y.to(device)
+    y = self.model(xx, alpha=alpha.to(self.device))
+    return y.to(self.device)
 
 #
 class GradShapExplainer(Explainer):
-  def __init__(self, top_k_frac, num_trains=100, num_samples=48, shap_batch_size=4):
+  def __init__(self, top_k_frac, num_trains=96, num_samples=48, shap_batch_size=4):
     super(GradShapExplainer, self).__init__()
     self.top_k_frac = top_k_frac
     self.num_trains = num_trains
@@ -43,7 +43,7 @@ class GradShapExplainer(Explainer):
     alpha_train = torch.randint(0,2,(self.num_trains,*xx_ashape[1:]))
     alpha_train[0] = torch.ones(*xx_ashape[1:])
 
-    cuda_model = ShapCudaMuSWrapper(model, x)
+    cuda_model = ShapCudaMuSWrapper(model, x, **kwargs)
     explainer = shap.GradientExplainer(cuda_model, [alpha_train], batch_size=self.shap_batch_size)
     raw_shap_values, _ = explainer.shap_values([torch.ones(xx_ashape)], ranked_outputs=1, nsamples=self.num_samples)
     shap_values = torch.tensor(raw_shap_values[0][0])

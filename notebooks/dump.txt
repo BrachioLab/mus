@@ -1,52 +1,157 @@
-[I 14:17:07.958 NotebookApp] Serving notebooks from local directory: /home/antonxue/foo/smooth-interp/notebooks
-[I 14:17:07.958 NotebookApp] Jupyter Notebook 6.4.12 is running at:
-[I 14:17:07.958 NotebookApp] http://localhost:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
-[I 14:17:07.958 NotebookApp]  or http://127.0.0.1:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
-[I 14:17:07.958 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[W 14:17:07.961 NotebookApp] No web browser found: could not locate runnable browser.
-[C 14:17:07.961 NotebookApp] 
+[I 20:19:47.714 NotebookApp] Serving notebooks from local directory: /home/antonxue/foo/mus/notebooks
+[I 20:19:47.714 NotebookApp] Jupyter Notebook 6.4.12 is running at:
+[I 20:19:47.714 NotebookApp] http://localhost:7777/?token=9f7bbb08a0f39b8c018e740a4d8c881b0944b0cf5e3f2f2c
+[I 20:19:47.715 NotebookApp]  or http://127.0.0.1:7777/?token=9f7bbb08a0f39b8c018e740a4d8c881b0944b0cf5e3f2f2c
+[I 20:19:47.715 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 20:19:47.719 NotebookApp] No web browser found: could not locate runnable browser.
+[C 20:19:47.719 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/antonxue/.local/share/jupyter/runtime/nbserver-127589-open.html
+        file:///home/antonxue/.local/share/jupyter/runtime/nbserver-420809-open.html
     Or copy and paste one of these URLs:
-        http://localhost:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
-     or http://127.0.0.1:7777/?token=70d7e66312c16c0dbff2512efd5c6371dbec9be06ab8b16c
-[I 14:17:09.706 NotebookApp] 302 GET / (127.0.0.1) 0.520000ms
-[W 14:17:13.149 NotebookApp] Notebook wfvml_plots.ipynb is not trusted
-[I 14:17:13.883 NotebookApp] Kernel started: 82ec46ee-4a07-4330-b4e0-6b9742d0f07c, name: python3
-[I 14:17:22.889 NotebookApp] Creating new notebook in 
-[I 14:17:24.216 NotebookApp] Kernel started: 33d877f6-f25f-49b9-a6fe-c3137858cc74, name: python3
-[I 14:19:24.232 NotebookApp] Saving file at /sample_images.ipynb
+        http://localhost:7777/?token=9f7bbb08a0f39b8c018e740a4d8c881b0944b0cf5e3f2f2c
+     or http://127.0.0.1:7777/?token=9f7bbb08a0f39b8c018e740a4d8c881b0944b0cf5e3f2f2c
+[W 20:19:49.716 NotebookApp] 404 DELETE /api/sessions/9518eeb5-085b-44d8-9129-45475f96f100 (127.0.0.1): Session not found: session_id='9518eeb5-085b-44d8-9129-45475f96f100'
+[W 20:19:49.717 NotebookApp] Session not found: session_id='9518eeb5-085b-44d8-9129-45475f96f100'
+[W 20:19:49.717 NotebookApp] 404 DELETE /api/sessions/9518eeb5-085b-44d8-9129-45475f96f100 (127.0.0.1) 2.940000ms referer=http://localhost:7777/notebooks/xray_test.ipynb
+[I 20:19:49.964 NotebookApp] Kernel started: ea92d79c-2d41-453d-95f8-694a5cb4df4a, name: python3
+[I 20:19:50.057 NotebookApp] Saving file at /xray_test.ipynb
 /home/antonxue/lib/miniconda3/envs/intml/lib/python3.10/site-packages/nbformat/__init__.py:129: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate(nb)
 /home/antonxue/lib/miniconda3/envs/intml/lib/python3.10/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate_nb(model['content'])
-[I 14:56:00.888 NotebookApp] Starting buffering for 82ec46ee-4a07-4330-b4e0-6b9742d0f07c:2dd915bf610c469796ff6d6e52c022c0
-2023-07-13 14:56:44.129871: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+2023-08-04 20:19:54.888300: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-07-13 14:56:44.605472: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2023-07-13 14:56:46.190494: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
-2023-07-13 14:56:46.191104: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
-2023-07-13 14:56:46.191123: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-[I 14:57:24.245 NotebookApp] Saving file at /sample_images.ipynb
-[I 14:59:24.252 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:01:24.249 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:03:24.390 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:05:24.415 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:07:24.252 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:09:24.225 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:10:09.901 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:13:24.247 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:15:24.256 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:17:24.251 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:19:24.233 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:19:36.629 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:21:24.263 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:23:24.231 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:24:38.014 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:25:24.229 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:27:24.233 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:31:24.227 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:33:24.230 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:35:24.236 NotebookApp] Saving file at /sample_images.ipynb
-[I 15:36:54.143 NotebookApp] Saving file at /sample_images.ipynb
+2023-08-04 20:19:55.099384: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:19:56.009044: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:19:56.009146: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:19:56.009158: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:21:40.387 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:21:43.214 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:21:43.232 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:21:43.888 NotebookApp] Replaying 3 buffered messages
+[I 20:21:50.026 NotebookApp] Saving file at /xray_test.ipynb
+2023-08-04 20:22:02.132883: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:22:02.274071: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:22:02.818300: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:22:02.818378: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:22:02.818386: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:23:00.429 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:23:03.259 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:23:03.318 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:23:04.326 NotebookApp] Replaying 3 buffered messages
+[I 20:23:50.020 NotebookApp] Saving file at /xray_test.ipynb
+2023-08-04 20:23:53.919316: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:23:54.128237: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:23:55.041337: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:23:55.041450: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:23:55.041462: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:25:50.023 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:26:51.706 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:26:54.534 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:26:54.645 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:26:55.252 NotebookApp] Replaying 3 buffered messages
+[I 20:27:38.855 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:27:39.081 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:27:39.196 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:27:40.207 NotebookApp] Replaying 3 buffered messages
+[I 20:27:50.020 NotebookApp] Saving file at /xray_test.ipynb
+2023-08-04 20:28:56.166705: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:28:56.375456: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:28:57.281270: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:28:57.281390: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:28:57.281403: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:29:50.029 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:29:54.585 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:29:57.213 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:29:57.326 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:29:57.966 NotebookApp] Replaying 3 buffered messages
+2023-08-04 20:30:02.555740: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:30:02.765916: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:30:03.595720: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:30:03.595779: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:30:03.595786: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:31:21.681 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:31:24.818 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:31:24.878 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:31:25.591 NotebookApp] Replaying 13 buffered messages
+2023-08-04 20:31:39.425774: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:31:39.831385: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:31:40.942964: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:31:40.943460: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:31:40.943480: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:31:50.027 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:33:16.666 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:33:19.496 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:33:19.511 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:33:20.195 NotebookApp] Replaying 3 buffered messages
+[I 20:33:45.960 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:33:46.189 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:33:46.301 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:33:47.309 NotebookApp] Replaying 3 buffered messages
+[I 20:33:50.020 NotebookApp] Saving file at /xray_test.ipynb
+2023-08-04 20:34:11.966968: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:34:12.179459: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:34:13.127923: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:34:13.128024: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:34:13.128036: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:35:50.021 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:36:52.182 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+WARNING:root:kernel ea92d79c-2d41-453d-95f8-694a5cb4df4a restarted
+[I 20:37:50.020 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:37:55.015 NotebookApp] Saving file at /xray_test.ipynb
+2023-08-04 20:48:27.271365: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:48:27.674587: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:48:28.884156: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:48:28.884711: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:48:28.884733: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:49:50.020 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:53:50.019 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:54:00.496 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:54:03.122 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:54:03.141 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:54:03.823 NotebookApp] Replaying 3 buffered messages
+2023-08-04 20:55:29.888168: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:55:30.094162: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:55:31.023849: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:55:31.023953: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:55:31.023966: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:55:50.017 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:57:10.874 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:57:13.702 NotebookApp] Kernel restarted: ea92d79c-2d41-453d-95f8-694a5cb4df4a
+[I 20:57:13.811 NotebookApp] Restoring connection for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174
+[I 20:57:14.393 NotebookApp] Replaying 3 buffered messages
+2023-08-04 20:57:31.513802: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-04 20:57:31.659966: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-08-04 20:57:32.237903: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:57:32.237966: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-08-04 20:57:32.237973: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[I 20:57:50.030 NotebookApp] Saving file at /xray_test.ipynb
+[I 20:59:50.023 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:01:50.039 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:03:50.034 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:05:50.121 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:07:50.024 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:09:50.026 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:11:42.682 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:13:50.025 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:15:50.023 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:21:50.088 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:23:50.043 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:25:50.040 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:33:50.041 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:39:50.041 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:45:50.030 NotebookApp] Saving file at /xray_test.ipynb
+[I 21:50:35.032 NotebookApp] Saving file at /xray_test.ipynb
+[I 23:13:50.047 NotebookApp] Saving file at /xray_test.ipynb
+[I 23:15:50.027 NotebookApp] Saving file at /xray_test.ipynb
+[I 23:18:02.467 NotebookApp] Starting buffering for ea92d79c-2d41-453d-95f8-694a5cb4df4a:5401fe4adf854f8d83706ccd264ad174

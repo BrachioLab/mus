@@ -25,7 +25,7 @@ conda activate mus
 * Modify paths in `qheader.py` as needed
 * `mkdir -p dump/q1_theory dump/q1_boxatk dump/q2 dump/q3_sparsity`
 * `mkdir -p notebooks/images`
-* `mkdir -p saved_models`
+* `mkdir -p saved_models exbits`
 
 
 ## Training
@@ -38,6 +38,15 @@ To train TweetEval classifiers with `lambd = 0.6` and `lambd = 0.3` masking for 
 
 
 ## Experiment Scripts
+
+We first generate the explanations used for the experiments.
+
+Start the script: `python3 -i qheader.py`
+* Generate ViT_b16: `generate_vit16_explanations(configs, num_todo=2000)`
+* Generate ResNet50: `generate_resnet50_explanations(configs, num_todo=2000)`
+* Generate RoBERTa: `ggenerate_roberta_explanations(configs, num_todo=2000)`
+
+
 The following scripts will put data into the `dump/` directory. Some of these experiments take a long time, and the data in `dump/` have been pre-generated.
 
 * E1: Code is in `q1_theory.py` and `q1_boxatk.py`.
