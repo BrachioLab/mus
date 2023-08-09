@@ -105,7 +105,7 @@ def make_default_configs():
 
 
 # Load baseline / fine-tuned models quickly
-def load_model(model_type, models_dir, lambd=None, ft_epoch=1, patch_size=28, q=64, verbose=True):
+def load_model(model_type, models_dir, lambd=None, ft_epoch=5, patch_size=28, q=64, verbose=True):
   assert model_type in ["resnet50", "vit16", "roberta"]
   assert os.path.isdir(models_dir)
   roberta_url = "cardiffnlp/twitter-roberta-base-sentiment"

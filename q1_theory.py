@@ -22,7 +22,7 @@ from qheader import *
 def q1t_test_radii(model, exbits_list, dataset,
                do_save = True,
                csv_saveto = None):
-  assert isinstance(model, MuS)
+  # assert isinstance(model, MuS)
   assert isinstance(exbits_list, list)
   model.cuda().eval()
   lambd = model.lambd

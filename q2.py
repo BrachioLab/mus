@@ -76,7 +76,7 @@ all_lambds = [8/8, 7/8, 6/8, 5/8, 4/8, 3/8, 2/8, 1/8]
 # Run the thing
 def q2_run_stuff(configs,
                  model_types = ["vit16", "resnet50", "roberta"],
-                 lambds = [8/8., 4/8., 3/8., 2/8., 1/8.],
+                 lambds = [8/8., 4/8., 2/8., 1/8.],
                  patch_size = 28,
                  q = 64,
                  num_todo = 2000):
@@ -88,7 +88,7 @@ def q2_run_stuff(configs,
     for lambd in lambds:
       tick += 1
       print(f"Running {tick}/{total_stuff}")
-      model = load_model(model_type, configs["models_dir"], lambd=lambd, patch_size=patch_size, q=q)
+      model = load_model(model_type, configs["models_dir"], lambd=lambd, patch_size=patch_size, q=q, ft_epoch=5)
       if model_type == "roberta":
         csv_saveto = f"q2_{model_type}_q{q}_lam{model.lambd:.4f}.csv"
       else:

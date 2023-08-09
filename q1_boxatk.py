@@ -167,7 +167,7 @@ def q1e_test_exbits(model, exbits_list, dataset,
 
 
 def q1e_run_stuff(model_type, configs,
-                  lambds = [8/8, 7/8, 6/8, 5/8, 4/8, 3/8, 2/8, 1/8],
+                  lambds = [8/8, 4/8, 3/8, 2/8, 1/8],
                   method_type = "shap",
                   top_frac = 0.2500,
                   patch_size = 28,

@@ -14,7 +14,7 @@ from .mus import *
 class MyResNet(nn.Module):
   def __init__(self, resnet):
     super(MyResNet, self).__init__()
-    assert isinstance(resnet, torch_models.resnet.ResNet)
+    # assert isinstance(resnet, torch_models.resnet.ResNet)
     self.resnet = resnet
     self.normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 
@@ -29,7 +29,7 @@ class MyResNet(nn.Module):
 class MyViT(nn.Module):
   def __init__(self, vit):
     super(MyViT, self).__init__()
-    assert isinstance(vit, torch_models.vision_transformer.VisionTransformer)
+    # assert isinstance(vit, torch_models.vision_transformer.VisionTransformer)
     self.vit = vit
     self.normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 

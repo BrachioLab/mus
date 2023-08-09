@@ -5,9 +5,9 @@ channels:
 dependencies:
   - python=3.10
   - jupyter
-  - pytorch
+  - pytorch=2.0.1
   - torchvision
   - shap
   - matplotlib
   - lime
-  - transformers
+  - transformers=4.31

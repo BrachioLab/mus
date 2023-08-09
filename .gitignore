@@ -130,10 +130,11 @@ dmypy.json
 
 # Custom
 tweeteval/
-dump/
+# dump/
 exbits/
 saved_models/
 notebooks/dump/
-*.png
-*.jpg
+neurips_rebuttals/
+# *.png
+# *.jpg
 
