@@ -46,7 +46,7 @@ def q3_find_good_r(model, x, order, use_selective):
 def q3_find_stable_exbits(model, lambd, order_list, dataset,
                           do_save = True,
                           csv_saveto = None):
-  assert isinstance(model, MuS)
+  # assert isinstance(model, MuS)
   assert len(dataset) >= len(order_list)
   assert lambd <= 0.5
   if do_save:

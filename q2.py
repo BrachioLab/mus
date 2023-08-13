@@ -24,7 +24,7 @@ def q2_test_radii(model, dataset,
                   do_save = True,
                   csv_saveto = None):
   assert len(dataset) >= num_todo and num_todo >= 1
-  assert isinstance(model, MuS)
+  # assert isinstance(model, MuS)
   model.cuda().eval()
   model.use_voting = True
   lambd = model.lambd

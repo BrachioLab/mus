@@ -28,7 +28,7 @@ def q1e_test_exbits(model, exbits_list, dataset,
                     do_save = True,
                     csv_saveto = None):
   assert box_max_iters > 0
-  assert isinstance(model, MuS)
+  # assert isinstance(model, MuS)
   assert isinstance(exbits_list, list)
   model.cuda().eval()
   lambd = model.lambd
