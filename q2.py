@@ -106,6 +106,46 @@ def q2_run_stuff(configs,
       q2_test_radii(model, dataset, num_todo=num_todo, csv_saveto=csv_half_saveto)
 
 
+def q2_run_qs(configs,
+              model_types = ["vit16", "resnet50", "roberta"],
+              lambds = [4/8., 3/8., 2/8., 1/8.],
+              patch_size = 28,
+              qs = [4, 8, 16, 32, 64, 128],
+              num_todo = 2000):
+  assert num_todo > 0
+  total_stuff = len(model_types) * len(lambds) * len(qs)
+  tick = 0
+  for model_type in model_types:
+    dataset = configs["model2data"][model_type]
+    for lambd in lambds:
+      for q in qs:
+        tick += 1
+        print(f"Running {tick}/{total_stuff}")
+
+        if abs(lambd - (1/q)) < 1e-3:
+          continue
+
+        model = load_model(model_type, configs["models_dir"], lambd=lambd, patch_size=patch_size, q=q, ft_epoch=5)
+        if model_type == "roberta":
+          csv_saveto = f"q2q_{model_type}_q{q}_lam{model.lambd:.4f}.csv"
+        else:
+          csv_saveto = f"q2q_{model_type}_psz{patch_size}_q{q}_lam{model.lambd:.4f}.csv"
+        csv_saveto = os.path.join(configs["saveto_dir"], csv_saveto)
+        q2_test_radii(model, dataset, num_todo=num_todo, csv_saveto=csv_saveto)
+
+        '''
+        lambd_half = lambd - 1/16.
+        model.lambd = lambd_half
+        if model_type == "roberta":
+          csv_half_saveto = f"q2q_{model_type}_q{q}_lam{model.lambd:.4f}.csv"
+        else:
+          csv_half_saveto = f"q2q_{model_type}_psz{patch_size}_q{q}_lam{model.lambd:.4f}.csv"
+        csv_half_saveto = os.path.join(configs["saveto_dir"], csv_half_saveto)
+        q2_test_radii(model, dataset, num_todo=num_todo, csv_saveto=csv_half_saveto)
+        '''
+
+
+
 if __name__ == "__main__":
   configs = make_default_configs()
   configs["saveto_dir"] = os.path.join(configs["base_dir"], "dump", "q2")
