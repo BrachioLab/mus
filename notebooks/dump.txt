@@ -62,3 +62,18 @@
 [I 2023-10-01 15:49:00.430 ServerApp] Saving file at /xaiia_plots.ipynb
 [I 2023-10-01 15:51:00.496 ServerApp] Saving file at /xaiia_plots.ipynb
 [I 2023-10-01 20:22:13.636 ServerApp] Saving file at /xaiia_plots.ipynb
+[I 2023-10-01 23:28:00.703 ServerApp] Starting buffering for bf80ab3e-b980-4c3a-9f8d-24f867fc48c5:c8c0f2b4-e0a5-4077-ac06-fae19c3215cd
+[I 2023-10-01 23:28:00.709 ServerApp] Starting buffering for 5b644ff6-3dce-4079-b1f5-d28eba07eadb:71719fe9-e43c-4320-8576-2cb8cdabd586
+[I 2023-10-01 23:28:00.710 ServerApp] Starting buffering for 3b2a2ae9-61a8-4eea-b3ac-cfa46b892934:35d08f65-dbb5-4981-b03a-2d5a80524b1b
+[I 2023-10-03 16:28:54.204 ServerApp] interrupted
+[I 2023-10-03 16:28:54.206 ServerApp] Serving notebooks from local directory: /home/antonxue/foo/mus/notebooks
+    3 active kernels
+    Jupyter Server 2.7.0 is running at:
+    http://localhost:7777/tree?token=30a22ad8ef9f2595368be7e6b83146c3de770bd03fbb8cf4
+        http://127.0.0.1:7777/tree?token=30a22ad8ef9f2595368be7e6b83146c3de770bd03fbb8cf4
+Shutdown this Jupyter server (y/[n])? [C 2023-10-03 16:28:54.487 ServerApp] received signal 2, stopping
+[I 2023-10-03 16:28:54.490 ServerApp] Shutting down 5 extensions
+[I 2023-10-03 16:28:54.491 ServerApp] Shutting down 3 kernels
+[I 2023-10-03 16:28:54.497 ServerApp] Kernel shutdown: 3b2a2ae9-61a8-4eea-b3ac-cfa46b892934
+[I 2023-10-03 16:28:54.497 ServerApp] Kernel shutdown: bf80ab3e-b980-4c3a-9f8d-24f867fc48c5
+[I 2023-10-03 16:28:54.498 ServerApp] Kernel shutdown: 5b644ff6-3dce-4079-b1f5-d28eba07eadb
