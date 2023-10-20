@@ -4,7 +4,7 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.resolve()))
 
-from experiments_header import *
+from header import *
 from theoretical_stability import *
 from empirical_stability import *
 from certified_accuracy import *
@@ -34,15 +34,15 @@ def run_empirical_stability(configs):
     saveto_dir = os.path.join(configs["dump_dir"], "q1_boxatk")
     assert os.path.isdir(saveto_dir)
 
-	vit16_exbits_list = load_exbits_list("vit16", method_type, top_frac, configs["exbits_dir"])
-	resnet50_exbits_list = load_exbits_list("resnet50", method_type, top_frac, configs["exbits_dir"])
-	roberta_exbits_list = load_exbits_list("roberta", method_type, top_frac, configs["exbits_dir"])
+    vit16_exbits_list = load_exbits_list("vit16", method_type, top_frac, configs["exbits_dir"])
+    resnet50_exbits_list = load_exbits_list("resnet50", method_type, top_frac, configs["exbits_dir"])
+    roberta_exbits_list = load_exbits_list("roberta", method_type, top_frac, configs["exbits_dir"])
 
-	configs["model2exbits"] = {
-		"vit16" : vit16_exbits_list,
-		"resnet50" : resnet50_exbits_list,
-		"roberta" : roberta_exbits_list
-	}
+    configs["model2exbits"] = {
+        "vit16" : vit16_exbits_list,
+        "resnet50" : resnet50_exbits_list,
+        "roberta" : roberta_exbits_list
+    }
 
     q1e_run_stuff("vit16", configs,
                   method_type = "shap",

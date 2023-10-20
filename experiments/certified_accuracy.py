@@ -15,7 +15,7 @@ import pathlib
 torch.manual_seed(1234)
 
 from my_models import *
-from experiments_header import *
+from header import *
 
 # Run a bunch of samples
 @torch.no_grad()

@@ -15,7 +15,7 @@ import pathlib
 torch.manual_seed(1234)
 
 from my_models import *
-from experiments_header import *
+from header import *
 
 # Test the incremental and decremental stability of everything
 @torch.no_grad()

@@ -15,7 +15,7 @@ torch.manual_seed(1234)
 
 from my_models import *
 from methods import *
-from experiments_header import *
+from header import *
 
 
 # Test stuff

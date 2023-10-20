@@ -15,7 +15,7 @@ import pathlib
 torch.manual_seed(1234)
 
 from my_models import *
-from experiments_header import *
+from header import *
 
 
 def q3_find_good_r(model, x, order, use_selective):
