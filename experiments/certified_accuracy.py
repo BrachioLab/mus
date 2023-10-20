@@ -1,7 +1,6 @@
 import os
 import sys
 import copy
-import argparse
 import numpy as np
 import torch
 import torch.nn as nn
@@ -81,7 +80,7 @@ def q2_run_stuff(configs,
                  saveto_dir = None):
   assert num_todo > 0
   assert saveto_dir is not None
-  total_stuff = len(model_types) * len(qs) * len(lambds)
+  total_stuff = len(model_types) * len(lambds)
   tick = 0
   for model_type in model_types:
     dataset = configs["model2data"][model_type]
