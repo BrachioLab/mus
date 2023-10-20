@@ -45,7 +45,7 @@ def make_default_configs():
 
   # Parse stuff and ensure directory structure
   models_dir, dump_dir, exbits_dir = args.models_dir, args.dump_dir, args.exbits_dir
-  assert os.path.isdir(models_dir) and os.path.isdir(dump_dir) and os.path.isdir(exbits_dir)
+  assert os.path.isdir(models_dir)
 
   imagenet_val_dir = os.path.join(args.imagenet_data_dir, "val")
   tweet_val_dir = args.tweet_data_dir
@@ -88,6 +88,12 @@ def make_default_configs():
 
     "imagenet_dataset" : imagenet_dataset,
     "tweet_dataset" : tweet_dataset,
+
+    "imagenet_randperm_file" : imagenet_randperm_file,
+    "imagenet_randperm" : imagenet_randperm,
+
+    "tweet_randperm_file" : tweet_randperm_file,
+    "tweet_randperm" : tweet_randperm,
 
     "model2data" : {
       "vit16" : imagenet_dataset,

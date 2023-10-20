@@ -96,8 +96,6 @@ def q1t_test_radii(model, exbits_list, dataset,
   return df
 
 
-all_lambds = [8/8, 7/8, 6/8, 5/8, 4/8, 3/8, 2/8, 1/8, 1/16]
-
 def q1t_run_stuff(configs,
                   model_types = ["vit16", "resnet50", "roberta"],
                   method_types = ["shap", "lime", "vgradu", "igradu"],
@@ -123,16 +121,18 @@ def q1t_run_stuff(configs,
           # Otherwise load normally
           else:
             model = load_model(model_type, configs["models_dir"], lambd=lambd, patch_size=patch_size, q=q)
+
           exbits_list = load_exbits_list(model_type, method_type, top_frac, configs["exbits_dir"])
+
           if isinstance(num_todo, int):
             exbits_list = exbits_list[:num_todo]
+
           if model_type == "roberta":
             csv_saveto = f"q1t_{model_type}_q{q}_{method_type}_top{top_frac:.4f}_lam{lambd:.4f}.csv"
           else:
             csv_saveto = f"q1t_{model_type}_psz{patch_size}_q{q}_{method_type}_top{top_frac:.4f}_lam{lambd:.4f}.csv"
           csv_saveto = os.path.join(saveto_dir, csv_saveto)
-          q1t_test_radii(model, exbits_list, configs["model2data"][model_type],
-                         csv_saveto = csv_saveto)
+          q1t_test_radii(model, exbits_list, configs["model2data"][model_type], csv_saveto=csv_saveto)
 
 
 

@@ -177,6 +177,7 @@ def q1e_run_stuff(model_type, configs,
                   box_max_iters = 50,
                   do_box_attacks = True,
                   saveto_dir = None):
+  assert saveto_dir is not None
   dataset = configs["model2data"][model_type]
   exbits_list = configs["model2exbits"][model_type]
 
@@ -197,23 +198,4 @@ def q1e_run_stuff(model_type, configs,
                     start_ind = start_ind,
                     num_todo = num_todo)
 
-
-if __name__ == "__main__":
-  configs = make_default_configs()
-  configs["saveto_dir"] = os.path.join(configs["dump_dir"], "q1_boxatk")
-
-  method_type, top_frac = "shap", 0.25
-  vit16_exbits_list = load_exbits_list("vit16", method_type, top_frac, configs["exbits_dir"])
-  resnet50_exbits_list = load_exbits_list("resnet50", method_type, top_frac, configs["exbits_dir"])
-  roberta_exbits_list = load_exbits_list("roberta", method_type, top_frac, configs["exbits_dir"])
-
-  configs["model2exbits"] = {
-    "vit16" : vit16_exbits_list,
-    "resnet50" : resnet50_exbits_list,
-    "roberta" : roberta_exbits_list
-  }
-
-  assert os.path.isdir(configs["saveto_dir"])
-
-# run_stuff("vit16", configs)
 

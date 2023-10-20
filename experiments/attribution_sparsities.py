@@ -86,13 +86,15 @@ def q3_find_stable_exbits(model, lambd, order_list, dataset,
 
 
 #
-def q3s_run_stuff(configs,
-                  model_types = ["vit16", "resnet50", "roberta"],
-                  method_types = ["shap", "lime", "igradu", "vgradu"],
-                  ft_lambds = [1/8., 2/8., 3/8., 4/8.],
-                  q = 64,
-                  patch_size = 28,
-                  num_todo = None):
+def q3_run_stuff(configs,
+                 model_types = ["vit16", "resnet50", "roberta"],
+                 method_types = ["shap", "lime", "igradu", "vgradu"],
+                 ft_lambds = [1/8., 2/8., 3/8., 4/8.],
+                 q = 64,
+                 patch_size = 28,
+                 num_todo = None,
+                 saveto_dir = None):
+  assert saveto_dir is not None
   total_stuff = len(model_types) * len(method_types) * len(ft_lambds)
   tick = 0
   for model_type in model_types:
@@ -109,7 +111,7 @@ def q3s_run_stuff(configs,
           csv_saveto = f"q3s_{model_type}_q{q}_{method_type}_lam{lambd:.4f}.csv"
         else:
           csv_saveto = f"q3s_{model_type}_psz{patch_size}_q{q}_{method_type}_lam{lambd:.4f}.csv"
-        csv_saveto = os.path.join(configs["saveto_dir"], csv_saveto)
+        csv_saveto = os.path.join(saveto_dir, csv_saveto)
         print(f"saveto {csv_saveto}")
         q3_find_stable_exbits(model, lambd, order_list, dataset, csv_saveto=csv_saveto)
 

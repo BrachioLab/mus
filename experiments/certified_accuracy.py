@@ -71,19 +71,17 @@ def q2_test_radii(model, dataset,
   return df
 
 
-all_lambds = [8/8, 7/8, 6/8, 5/8, 4/8, 3/8, 2/8, 1/8]
-
 # Run the thing
 def q2_run_stuff(configs,
                  model_types = ["vit16", "resnet50", "roberta"],
-                 lambds = [8/8., 4/8., 2/8., 1/8.],
+                 lambds = [8/8., 4/8., 3/8., 2/8., 1/8.],
                  patch_size = 28,
-                 qs = [4, 8, 16, 32, 64, 128],
+                 q = 64,
                  num_todo = 2000,
                  saveto_dir = None):
   assert num_todo > 0
   assert saveto_dir is not None
-  total_stuff = len(model_types) * len(lambds)
+  total_stuff = len(model_types) * len(qs) * len(lambds)
   tick = 0
   for model_type in model_types:
     dataset = configs["model2data"][model_type]

@@ -1,4 +1,5 @@
 import copy
+import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -14,7 +15,7 @@ class MuS(nn.Module):
     super(MuS, self).__init__()
     self.base_model = copy.deepcopy(base_model)
     self.q = q
-    self.lambd = int(lambd * q) / q
+    self.lambd = max(1/q, int(lambd*q)/q)
     self.use_voting = use_voting
     self.return_all_q = return_all_q
     self.seed = seed
