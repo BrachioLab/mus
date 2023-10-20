@@ -15,7 +15,7 @@ import pathlib
 torch.manual_seed(1234)
 
 from my_models import *
-from qheader import *
+from experiments_header import *
 
 
 def q3_find_good_r(model, x, order, use_selective):
@@ -112,10 +112,4 @@ def q3s_run_stuff(configs,
         csv_saveto = os.path.join(configs["saveto_dir"], csv_saveto)
         print(f"saveto {csv_saveto}")
         q3_find_stable_exbits(model, lambd, order_list, dataset, csv_saveto=csv_saveto)
-
-#
-if __name__ == "__main__":
-  configs = make_default_configs()
-  configs["saveto_dir"] = os.path.join(configs["base_dir"], "dump", "q3_sparsity")
-  assert os.path.isdir(configs["saveto_dir"])
 

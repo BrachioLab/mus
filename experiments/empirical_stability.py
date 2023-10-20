@@ -15,7 +15,8 @@ torch.manual_seed(1234)
 
 from my_models import *
 from methods import *
-from qheader import *
+from experiments_header import *
+
 
 # Test stuff
 def q1e_test_exbits(model, exbits_list, dataset,
@@ -28,7 +29,6 @@ def q1e_test_exbits(model, exbits_list, dataset,
                     do_save = True,
                     csv_saveto = None):
   assert box_max_iters > 0
-  # assert isinstance(model, MuS)
   assert isinstance(exbits_list, list)
   model.cuda().eval()
   lambd = model.lambd
@@ -175,7 +175,8 @@ def q1e_run_stuff(model_type, configs,
                   start_ind = 0,
                   num_todo = 250,
                   box_max_iters = 50,
-                  do_box_attacks = True):
+                  do_box_attacks = True,
+                  saveto_dir = None):
   dataset = configs["model2data"][model_type]
   exbits_list = configs["model2exbits"][model_type]
 
@@ -185,7 +186,7 @@ def q1e_run_stuff(model_type, configs,
       csv_saveto = f"q1e_{model_type}_q{model.q}_{method_type}_top{top_frac:.4f}_lam{lambd:.4f}.csv"
     else:
       csv_saveto = f"q1e_{model_type}_psz{patch_size}_q{model.q}_{method_type}_top{top_frac:.4f}_lam{lambd:.4f}.csv"
-    csv_saveto = os.path.join(configs["saveto_dir"], csv_saveto)
+    csv_saveto = os.path.join(saveto_dir, csv_saveto)
     header_msg = f"{model_type}"
     print(f"Launching: {csv_saveto}")
     q1e_test_exbits(model, exbits_list, dataset,
@@ -199,7 +200,7 @@ def q1e_run_stuff(model_type, configs,
 
 if __name__ == "__main__":
   configs = make_default_configs()
-  configs["saveto_dir"] = os.path.join(configs["base_dir"], "dump", "q1_boxatk")
+  configs["saveto_dir"] = os.path.join(configs["dump_dir"], "q1_boxatk")
 
   method_type, top_frac = "shap", 0.25
   vit16_exbits_list = load_exbits_list("vit16", method_type, top_frac, configs["exbits_dir"])

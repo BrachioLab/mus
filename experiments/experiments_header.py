@@ -26,8 +26,9 @@ MY_PID = os.getpid()
 print(f"PID: {MY_PID}")
 
 # Default arguments for argparse
-_BASE_DIR = pathlib.Path(__file__).parent.resolve()
+_BASE_DIR = pathlib.Path(__file__).parent.parent.resolve()
 _EXBITS_DIR = os.path.join(_BASE_DIR, "exbits")
+_DUMP_DIR = os.path.join(_BASE_DIR, "dump")
 _MODELS_DIR = os.path.join(_BASE_DIR, "saved_models")
 _IMAGENET_DATA_DIR = "/data/imagenet"
 _TWEET_DATA_DIR = os.path.join(_BASE_DIR, "tweeteval/datasets/sentiment")
@@ -37,15 +38,14 @@ def make_default_configs():
   parser = argparse.ArgumentParser()
   parser.add_argument("--models-dir", type=str, default=_MODELS_DIR)
   parser.add_argument("--exbits-dir", type=str, default=_EXBITS_DIR)
+  parser.add_argument("--dump-dir", type=str, default=_DUMP_DIR)
   parser.add_argument("--imagenet-data-dir", type=str, default=_IMAGENET_DATA_DIR)
   parser.add_argument("--tweet-data-dir", type=str, default=_TWEET_DATA_DIR)
   args, unknown = parser.parse_known_args()
 
   # Parse stuff and ensure directory structure
-  models_dir = args.models_dir
-  exbits_dir = args.exbits_dir
-  assert os.path.isdir(models_dir)
-  assert os.path.isdir(exbits_dir)
+  models_dir, dump_dir, exbits_dir = args.models_dir, args.dump_dir, args.exbits_dir
+  assert os.path.isdir(models_dir) and os.path.isdir(dump_dir) and os.path.isdir(exbits_dir)
 
   imagenet_val_dir = os.path.join(args.imagenet_data_dir, "val")
   tweet_val_dir = args.tweet_data_dir
@@ -80,6 +80,7 @@ def make_default_configs():
   # Some useful dicts
   return {
     "base_dir" : _BASE_DIR,
+    "dump_dir" : dump_dir,
     "models_dir" : models_dir,
     "exbits_dir" : exbits_dir,
     "imagenet_val_dir" : imagenet_val_dir,

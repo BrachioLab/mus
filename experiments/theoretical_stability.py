@@ -15,13 +15,13 @@ import pathlib
 torch.manual_seed(1234)
 
 from my_models import *
-from qheader import *
+from experiments_header import *
 
 # Test the incremental and decremental stability of everything
 @torch.no_grad()
 def q1t_test_radii(model, exbits_list, dataset,
-               do_save = True,
-               csv_saveto = None):
+                   do_save = True,
+                   csv_saveto = None):
   # assert isinstance(model, MuS)
   assert isinstance(exbits_list, list)
   model.cuda().eval()
@@ -105,7 +105,9 @@ def q1t_run_stuff(configs,
                   top_fracs = [4/8, 3/8, 2/8, 1/8],
                   patch_size = 28,
                   q = 64,
-                  num_todo = None):
+                  num_todo = None,
+                  saveto_dir = None):
+  assert saveto_dir is not None
   total_stuff = len(model_types) * len(method_types) * len(lambds) * len(top_fracs)
   tick = 0
   for model_type in model_types:
@@ -128,12 +130,9 @@ def q1t_run_stuff(configs,
             csv_saveto = f"q1t_{model_type}_q{q}_{method_type}_top{top_frac:.4f}_lam{lambd:.4f}.csv"
           else:
             csv_saveto = f"q1t_{model_type}_psz{patch_size}_q{q}_{method_type}_top{top_frac:.4f}_lam{lambd:.4f}.csv"
-          csv_saveto = os.path.join(configs["saveto_dir"], csv_saveto)
+          csv_saveto = os.path.join(saveto_dir, csv_saveto)
           q1t_test_radii(model, exbits_list, configs["model2data"][model_type],
                          csv_saveto = csv_saveto)
 
-if __name__ == "__main__":
-  configs = make_default_configs()
-  configs["saveto_dir"] = os.path.join(configs["base_dir"], "dump", "q1_theory")
-  assert os.path.isdir(configs["saveto_dir"])
+
 
