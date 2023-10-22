@@ -3,11 +3,14 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10
   - jupyter
-  - pytorch=2.0.1
-  - torchvision
-  - shap
-  - matplotlib
   - lime
-  - transformers=4.31
+  - matplotlib
+  - python=3.10
+  - pytorch=2.0.1
+  - shap
+  - torchvision
+  - transformers
+  - pytorch-cuda=11.7
+  - torchaudio
+
