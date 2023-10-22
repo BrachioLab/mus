@@ -26,7 +26,7 @@ def run_theoretical_stability(configs, num_todo=2000, **kwargs):
     torch.manual_seed(1234)
     saveto_dir = os.path.join(configs["dump_dir"], "q1_theory")
     assert os.path.isdir(saveto_dir)
-    q1t_run_stuff(configs, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
+    q1t_run_stuff(configs, q=64, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
 
 
 # Q1E: the most time intensive experiment, so be careful
@@ -35,10 +35,10 @@ def run_empirical_stability(configs, num_todo=250, **kwargs):
     saveto_dir = os.path.join(configs["dump_dir"], "q1_boxatk")
     assert os.path.isdir(saveto_dir)
 
-    method_type, top_frac = "shap", 0.2500
-    vit16_exbits_list = load_exbits_list("vit16", method_type, top_frac, configs["exbits_dir"])
-    resnet50_exbits_list = load_exbits_list("resnet50", method_type, top_frac, configs["exbits_dir"])
-    roberta_exbits_list = load_exbits_list("roberta", method_type, top_frac, configs["exbits_dir"])
+    top_frac, lambds = 0.25, [8/8., 4/8., 3/8., 2/8., 1/8.]
+    vit16_exbits_list = load_exbits_list("vit16", "shap", top_frac, configs["exbits_dir"])
+    resnet50_exbits_list = load_exbits_list("resnet50", "shap", top_frac, configs["exbits_dir"])
+    roberta_exbits_list = load_exbits_list("roberta", "shap", top_frac, configs["exbits_dir"])
 
     configs["model2exbits"] = {
         "vit16" : vit16_exbits_list,
@@ -46,22 +46,25 @@ def run_empirical_stability(configs, num_todo=250, **kwargs):
         "roberta" : roberta_exbits_list
     }
 
-    q1e_run_stuff("vit16", configs,
-                  method_type = method_type,
-                  lambds = [8/8., 4/8., 3/8., 2/8., 1/8.],
-                  top_frac = top_frac,
-                  num_todo = num_todo,
-                  saveto_dir = saveto_dir,
-                  **kwargs)
+    q1e_run_stuff("vit16", configs, method_type="shap", q=16, lambds=lambds, top_frac=top_frac,
+                  num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
 
+    q1e_run_stuff("resnet50", configs, method_type="shap", q=16, lambds=lambds, top_frac=top_frac,
+                  num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
+
+    q1e_run_stuff("roberta", configs, method_type="shap", q=16, lambds=lambds, top_frac=top_frac,
+                  num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
 
 # Q2
 def run_certified_accuracies(configs, num_todo=2000, **kwargs):
     torch.manual_seed(1234)
-    saveto_dir = os.path.join(configs["dump_dir"], "q2")
+    saveto_dir = os.path.join(configs["dump_dir"], "q2_certacc")
     assert os.path.isdir(saveto_dir)
-    q2_run_stuff(configs, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
-
+    q2_run_stuff(configs, q=8, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
+    q2_run_stuff(configs, q=16, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
+    q2_run_stuff(configs, q=32, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
+    q2_run_stuff(configs, q=64, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
+    q2_run_stuff(configs, q=128, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
 
 # Q3
 def run_attribution_sparsities(configs, num_todo=250, **kwargs):
@@ -96,7 +99,7 @@ if __name__ == "__main__":
     os.makedirs(exbits_dir, exist_ok=True)
     os.makedirs(os.path.join(dump_dir, "q1_theory"), exist_ok=True)
     os.makedirs(os.path.join(dump_dir, "q1_boxatk"), exist_ok=True)
-    os.makedirs(os.path.join(dump_dir, "q2"), exist_ok=True)
+    os.makedirs(os.path.join(dump_dir, "q2_certacc"), exist_ok=True)
     os.makedirs(os.path.join(dump_dir, "q3_sparsity"), exist_ok=True)
     os.makedirs(os.path.join(dump_dir, "q4_additive"), exist_ok=True)
     os.makedirs(os.path.join(dump_dir, "q5_advrobust"), exist_ok=True)
