@@ -30,12 +30,16 @@ def run_theoretical_stability(configs, num_todo=2000, **kwargs):
 
 
 # Q1E: the most time intensive experiment, so be careful
-def run_empirical_stability(configs, num_todo=250, **kwargs):
+def run_empirical_stability(configs,
+                            model_types = ["vit16", "resnet50", "roberta"],
+                            lambds = [8/8., 4/8., 3/8., 2/8., 1/8.],
+                            num_todo = 250,
+                            **kwargs):
     torch.manual_seed(1234)
     saveto_dir = os.path.join(configs["dump_dir"], "q1_boxatk")
     assert os.path.isdir(saveto_dir)
 
-    top_frac, lambds = 0.25, [8/8., 4/8., 3/8., 2/8., 1/8.]
+    top_frac = 0.25
     vit16_exbits_list = load_exbits_list("vit16", "shap", top_frac, configs["exbits_dir"])
     resnet50_exbits_list = load_exbits_list("resnet50", "shap", top_frac, configs["exbits_dir"])
     roberta_exbits_list = load_exbits_list("roberta", "shap", top_frac, configs["exbits_dir"])
@@ -46,14 +50,10 @@ def run_empirical_stability(configs, num_todo=250, **kwargs):
         "roberta" : roberta_exbits_list
     }
 
-    q1e_run_stuff("vit16", configs, method_type="shap", q=16, lambds=lambds, top_frac=top_frac,
-                  num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
+    for model_type in model_types:
+        q1e_run_stuff(model_type, configs, method_type="shap", q=16, lambds=lambds,
+                      top_frac=top_frac, num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
 
-    q1e_run_stuff("resnet50", configs, method_type="shap", q=16, lambds=lambds, top_frac=top_frac,
-                  num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
-
-    q1e_run_stuff("roberta", configs, method_type="shap", q=16, lambds=lambds, top_frac=top_frac,
-                  num_todo=num_todo, saveto_dir=saveto_dir, **kwargs)
 
 # Q2
 def run_certified_accuracies(configs, num_todo=2000, **kwargs):

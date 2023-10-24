@@ -21,7 +21,7 @@ from header import *
 def q1e_test_exbits(model, exbits_list, dataset,
                     start_ind = 0,
                     num_todo = None,
-                    init_r_max_fracs = [2/8., 3/8., 4/8.],
+                    init_r_max_fracs = [1/8., 2/8., 4/8.],
                     box_max_iters = -1,
                     do_box_attacks = True,
                     iter_header_msg = "",
