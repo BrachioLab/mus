@@ -1,35 +1,41 @@
-[I 2023-10-21 15:14:36.097 ServerApp] Package notebook took 0.0000s to import
-[I 2023-10-21 15:14:36.111 ServerApp] Package jupyter_lsp took 0.0138s to import
-[W 2023-10-21 15:14:36.111 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
-[I 2023-10-21 15:14:36.117 ServerApp] Package jupyter_server_terminals took 0.0049s to import
-[I 2023-10-21 15:14:36.117 ServerApp] Package jupyterlab took 0.0000s to import
-[I 2023-10-21 15:14:36.161 ServerApp] Package notebook_shim took 0.0000s to import
-[W 2023-10-21 15:14:36.161 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
-[I 2023-10-21 15:14:36.162 ServerApp] jupyter_lsp | extension was successfully linked.
-[I 2023-10-21 15:14:36.165 ServerApp] jupyter_server_terminals | extension was successfully linked.
-[I 2023-10-21 15:14:36.168 ServerApp] jupyterlab | extension was successfully linked.
-[I 2023-10-21 15:14:36.170 ServerApp] notebook | extension was successfully linked.
-[I 2023-10-21 15:14:36.300 ServerApp] notebook_shim | extension was successfully linked.
-[I 2023-10-21 15:14:36.350 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2023-10-21 15:14:36.351 ServerApp] jupyter_lsp | extension was successfully loaded.
-[I 2023-10-21 15:14:36.352 ServerApp] jupyter_server_terminals | extension was successfully loaded.
-[I 2023-10-21 15:14:36.354 LabApp] JupyterLab extension loaded from /home/antonxue/lib/miniconda3/envs/mus/lib/python3.10/site-packages/jupyterlab
-[I 2023-10-21 15:14:36.354 LabApp] JupyterLab application directory is /home/antonxue/lib/miniconda3/envs/mus/share/jupyter/lab
-[I 2023-10-21 15:14:36.355 LabApp] Extension Manager is 'pypi'.
-[I 2023-10-21 15:14:36.356 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2023-10-21 15:14:36.358 ServerApp] notebook | extension was successfully loaded.
-[I 2023-10-21 15:14:36.358 ServerApp] Serving notebooks from local directory: /home/antonxue/foo/mus/notebooks
-[I 2023-10-21 15:14:36.358 ServerApp] Jupyter Server 2.7.0 is running at:
-[I 2023-10-21 15:14:36.358 ServerApp] http://localhost:7777/tree?token=e0a41a79c1db65b03904141ec30512000b1ea170f9da0a2d
-[I 2023-10-21 15:14:36.358 ServerApp]     http://127.0.0.1:7777/tree?token=e0a41a79c1db65b03904141ec30512000b1ea170f9da0a2d
-[I 2023-10-21 15:14:36.358 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[W 2023-10-21 15:14:36.361 ServerApp] No web browser found: Error('could not locate runnable browser').
-[C 2023-10-21 15:14:36.361 ServerApp] 
+[I 2023-10-25 11:33:32.726 ServerApp] Package notebook took 0.0000s to import
+[I 2023-10-25 11:33:32.733 ServerApp] Package jupyter_lsp took 0.0062s to import
+[W 2023-10-25 11:33:32.733 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-10-25 11:33:32.736 ServerApp] Package jupyter_server_terminals took 0.0027s to import
+[I 2023-10-25 11:33:32.736 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-10-25 11:33:32.755 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-10-25 11:33:32.755 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-10-25 11:33:32.755 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-10-25 11:33:32.758 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-10-25 11:33:32.761 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-10-25 11:33:32.764 ServerApp] notebook | extension was successfully linked.
+[I 2023-10-25 11:33:32.890 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-10-25 11:33:32.931 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-10-25 11:33:32.932 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-10-25 11:33:32.933 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-10-25 11:33:32.934 LabApp] JupyterLab extension loaded from /home/antonxue/lib/miniconda3/envs/mus/lib/python3.10/site-packages/jupyterlab
+[I 2023-10-25 11:33:32.934 LabApp] JupyterLab application directory is /home/antonxue/lib/miniconda3/envs/mus/share/jupyter/lab
+[I 2023-10-25 11:33:32.934 LabApp] Extension Manager is 'pypi'.
+[I 2023-10-25 11:33:32.936 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-10-25 11:33:32.938 ServerApp] notebook | extension was successfully loaded.
+[I 2023-10-25 11:33:32.938 ServerApp] Serving notebooks from local directory: /home/antonxue/foo/mus/notebooks
+[I 2023-10-25 11:33:32.938 ServerApp] Jupyter Server 2.7.0 is running at:
+[I 2023-10-25 11:33:32.938 ServerApp] http://localhost:7777/tree?token=c29a02b277efa0580f7e7269bb7a4de3dce7a082cd44a4ee
+[I 2023-10-25 11:33:32.938 ServerApp]     http://127.0.0.1:7777/tree?token=c29a02b277efa0580f7e7269bb7a4de3dce7a082cd44a4ee
+[I 2023-10-25 11:33:32.938 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2023-10-25 11:33:32.940 ServerApp] No web browser found: Error('could not locate runnable browser').
+[C 2023-10-25 11:33:32.941 ServerApp] 
     
     To access the server, open this file in a browser:
-        file:///home/antonxue/.local/share/jupyter/runtime/jpserver-3466870-open.html
+        file:///home/antonxue/.local/share/jupyter/runtime/jpserver-2728255-open.html
     Or copy and paste one of these URLs:
-        http://localhost:7777/tree?token=e0a41a79c1db65b03904141ec30512000b1ea170f9da0a2d
-        http://127.0.0.1:7777/tree?token=e0a41a79c1db65b03904141ec30512000b1ea170f9da0a2d
-[I 2023-10-21 15:14:36.378 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
-[I 2023-10-21 15:31:23.904 ServerApp] 302 GET / (@127.0.0.1) 0.40ms
+        http://localhost:7777/tree?token=c29a02b277efa0580f7e7269bb7a4de3dce7a082cd44a4ee
+        http://127.0.0.1:7777/tree?token=c29a02b277efa0580f7e7269bb7a4de3dce7a082cd44a4ee
+[I 2023-10-25 11:33:32.953 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2023-10-25 11:34:19.818 ServerApp] Kernel started: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-25 11:34:20.264 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 11:34:23.682 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-25 11:34:23.723 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 11:34:23.729 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 11:34:23.729 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 11:36:19.175 ServerApp] Saving file at /neurips_plots.ipynb
