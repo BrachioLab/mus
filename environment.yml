@@ -13,4 +13,4 @@ dependencies:
   - transformers
   - pytorch-cuda=11.7
   - torchaudio
-
+prefix: /home/antonxue/lib/miniconda3/envs/mus

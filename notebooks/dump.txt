@@ -39,3 +39,130 @@
 [I 2023-10-25 11:34:23.729 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
 [I 2023-10-25 11:34:23.729 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
 [I 2023-10-25 11:36:19.175 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 11:52:36.619 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 11:54:36.841 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:28:37.088 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:30:37.316 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:32:37.560 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:36:37.788 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:38:07.736 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:40:00.659 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:41:25.116 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:43:25.356 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:45:25.610 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:47:25.839 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:49:26.606 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:51:26.825 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:53:00.980 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-25 13:53:00.991 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 13:53:01.006 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 13:53:01.006 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 13:53:27.511 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:54:13.620 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-25 13:54:13.681 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 13:54:13.690 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 13:54:13.690 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 13:55:27.657 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 13:55:43.290 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-25 13:55:43.299 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 13:55:43.311 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 13:55:43.311 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 13:57:27.840 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:25:28.086 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:27:28.674 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:47:36.606 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:49:36.921 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:50:57.852 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:52:58.268 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:54:58.541 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 14:56:58.819 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 15:01:22.171 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 15:01:26.537 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:f3f4a697-c5dc-4b4e-8d51-54c60890f374
+[I 2023-10-25 18:07:03.039 ServerApp] 302 GET / (@127.0.0.1) 0.45ms
+[I 2023-10-25 18:07:03.050 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.89ms
+[I 2023-10-25 18:07:28.015 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 18:33:03.894 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:ce554850-e680-4a78-af45-3fe4d64c5841
+[I 2023-10-25 20:21:21.159 ServerApp] 302 GET / (@127.0.0.1) 0.92ms
+[I 2023-10-25 20:21:21.166 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 1.49ms
+[I 2023-10-25 20:21:35.469 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 20:25:35.341 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:27:35.582 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:29:35.813 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:31:36.035 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:33:36.250 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:37:36.466 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:43:36.678 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:45:36.896 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:47:37.097 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:49:37.324 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:51:37.531 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:53:37.730 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:55:37.947 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 20:57:38.152 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 21:01:38.355 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 21:03:32.260 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:7fa77560-2d49-43d3-88e4-2d2f8d2d1481
+[I 2023-10-25 21:04:49.718 ServerApp] 302 GET / (@127.0.0.1) 0.85ms
+[I 2023-10-25 21:04:49.728 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 1.37ms
+[I 2023-10-25 21:05:07.720 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 21:05:54.341 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 21:06:40.460 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 21:08:40.819 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 21:10:41.074 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 21:10:51.370 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-25 21:10:51.441 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:7551955e-6408-4986-8330-ce227f6a147e
+[I 2023-10-25 21:10:51.451 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-25 21:10:51.451 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:7551955e-6408-4986-8330-ce227f6a147e
+[I 2023-10-25 21:12:42.079 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 21:20:45.057 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-25 23:48:45.413 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 00:00:28.275 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:7551955e-6408-4986-8330-ce227f6a147e
+[I 2023-10-26 11:04:45.948 ServerApp] 302 GET / (@127.0.0.1) 0.86ms
+[I 2023-10-26 11:09:33.714 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:13:33.437 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:15:33.662 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:17:33.999 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:17:36.274 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:17:36.356 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:17:36.368 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:17:36.368 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:17:36.535 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:17:39.155 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:17:39.164 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:17:39.172 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:17:39.172 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:19:36.782 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:21:37.016 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:22:22.573 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:22:22.670 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:22:22.680 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:22:22.680 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:23:17.038 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:23:17.053 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:23:17.061 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:23:17.061 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:23:37.418 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:25:34.448 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:25:34.696 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:25:34.709 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:25:34.740 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:25:34.741 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:25:34.803 ServerApp] Saving file at /neurips_plots.ipynb
+[W 2023-10-26 11:25:34.859 ServerApp] /home/antonxue/foo/mus/notebooks/.~neurips_plots.ipynb doesn't exist
+[I 2023-10-26 11:25:37.736 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:25:37.756 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:25:37.765 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:25:37.765 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:25:38.273 ServerApp] Replaying 1 buffered messages
+[I 2023-10-26 11:26:45.731 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:36:56.419 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:36:56.432 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:36:56.442 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:36:56.443 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:36:59.560 ServerApp] Kernel restarted: 14cbe4b3-7ce4-4f41-893d-ca7065a4980b
+[I 2023-10-26 11:36:59.569 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:36:59.577 ServerApp] Connecting to kernel 14cbe4b3-7ce4-4f41-893d-ca7065a4980b.
+[I 2023-10-26 11:36:59.577 ServerApp] Restoring connection for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99
+[I 2023-10-26 11:38:54.501 ServerApp] Saving file at /neurips_plots.ipynb
+[I 2023-10-26 11:44:47.555 ServerApp] Saving file at /neurips_plots.ipynb
+[W 2023-10-26 13:20:29.578 ServerApp] WebSocket ping timeout after 119902 ms.
+[I 2023-10-26 13:20:34.583 ServerApp] Starting buffering for 14cbe4b3-7ce4-4f41-893d-ca7065a4980b:b0023c48-b7c9-4817-839c-5bfdd56dde99

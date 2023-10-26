@@ -55,3 +55,59 @@ def run_q4_additive(configs, num_todo=None, saveto_dir=None):
     add_0250_df = q1t_test_radii(add_0250, exbits_list, imagenet_dataset, csv_saveto=add_0250_saveto)
     add_0125_df = q1t_test_radii(add_0125, exbits_list, imagenet_dataset, csv_saveto=add_0125_saveto)
 
+
+    # R1 Robustness checks
+    check_r1_saveto = os.path.join(saveto_dir, "additive_check_r1.csv")
+    spsz = 4
+    df = pd.DataFrame(columns=[
+        "mus_1000", "mus_0500", "mus_0250", "mus_0125",
+        "add_1000", "add_0500", "add_0250", "add_0125",
+    ])
+    pbar = tqdm(exbits_list)
+    for i, alpha in enumerate(pbar):
+        x, true_label = imagenet_dataset[i]
+        x, alpha = x.cuda(), alpha.cuda()
+        pertb_bits = (alpha == 0).int()
+
+        this_mus_1000_r1_ok = check_r1_robust(mus_1000, x, alpha, pertb_bits, split_size=spsz)[0]
+        this_mus_0500_r1_ok = check_r1_robust(mus_0500, x, alpha, pertb_bits, split_size=spsz)[0]
+        this_mus_0250_r1_ok = check_r1_robust(mus_0250, x, alpha, pertb_bits, split_size=spsz)[0]
+        this_mus_0125_r1_ok = check_r1_robust(mus_0125, x, alpha, pertb_bits, split_size=spsz)[0]
+
+        this_add_1000_r1_ok = check_r1_robust(add_1000, x, alpha, pertb_bits, split_size=spsz)[0]
+        this_add_0500_r1_ok = check_r1_robust(add_0500, x, alpha, pertb_bits, split_size=spsz)[0]
+        this_add_0250_r1_ok = check_r1_robust(add_0250, x, alpha, pertb_bits, split_size=spsz)[0]
+        this_add_0125_r1_ok = check_r1_robust(add_0125, x, alpha, pertb_bits, split_size=spsz)[0]
+
+        this_df = pd.DataFrame({
+            "mus_1000" : this_mus_1000_r1_ok,
+            "mus_0500" : this_mus_0500_r1_ok,
+            "mus_0250" : this_mus_0250_r1_ok,
+            "mus_0125" : this_mus_0125_r1_ok,
+            "add_1000" : this_add_1000_r1_ok,
+            "add_0500" : this_add_0500_r1_ok,
+            "add_0250" : this_add_0250_r1_ok,
+            "add_0125" : this_add_0125_r1_ok,
+            }, index = [i])
+
+        df = pd.concat([df, this_df])
+        df.to_csv(emp_r1_check_saveto)
+
+        # do the description string
+        desc_str = f"mus ("
+        desc_str += f"{np.array(df['mus_1000']).mean():.3f}, "
+        desc_str += f"{np.array(df['mus_0500']).mean():.3f}, "
+        desc_str += f"{np.array(df['mus_0250']).mean():.3f}, "
+        desc_str += f"{np.array(df['mus_0125']).mean():.3f}), "
+
+        desc_str += "add ("
+        desc_str += f"{np.array(df['add_1000']).mean():.3f}, "
+        desc_str += f"{np.array(df['add_0500']).mean():.3f}, "
+        desc_str += f"{np.array(df['add_0250']).mean():.3f}, "
+        desc_str += f"{np.array(df['add_0125']).mean():.3f}), "
+        
+        pbar.set_description(desc_str)
+        # mus (0.716, 0.660, 0.512, 0.364), add (0.184, 0.320, 0.360, 0.156)
+
+    df.to_csv(check_r1_saveto)
+
